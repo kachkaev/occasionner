@@ -1,0 +1,63 @@
+{
+  "name": "occasionner",
+  "version": "0.0.0",
+  "description": "Compute ‘round’ anniversaries of personal events (10 000 000 seconds, 600 weeks, 40 years…)",
+  "keywords": [
+    "anniversary",
+    "milestone",
+    "occasion",
+    "calendar",
+    "dates",
+    "temporal"
+  ],
+  "homepage": "https://github.com/kachkaev/occasionner#readme",
+  "bugs": {
+    "url": "https://github.com/kachkaev/occasionner/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kachkaev/occasionner.git",
+    "directory": "packages/occasionner"
+  },
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Alexander Kachkaev",
+    "email": "alexander@kachkaev.ru",
+    "url": "https://en.kachkaev.ru"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "LICENSE.md",
+    "README.md",
+    "dist/"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "lint:tsc": "tsc --noEmit",
+    "prepack": "pnpm build",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "temporal-polyfill": "1.0.4"
+  },
+  "devDependencies": {
+    "@tsconfig/node-ts": "23.6.4",
+    "@tsconfig/strictest": "2.0.8",
+    "typescript": "6.0.3",
+    "vitest": "4.1.10"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

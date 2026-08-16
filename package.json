@@ -3,6 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "pnpm --recursive run build",
+    "changesets:publish": "changeset publish",
+    "changesets:version": "changeset version && pnpm install --lockfile-only --no-frozen-lockfile",
     "fix": "npm-run-all2 --continue-on-error \"fix:*\"",
     "fix:eslint": "eslint --max-warnings=0 --fix",
     "fix:knip": "knip --fix",
@@ -16,8 +19,9 @@
     "lint:markdownlint": "markdownlint --dot .",
     "lint:pnpm-dedupe": "pnpm dedupe --check",
     "lint:prettier": "prettier --cache --check .",
-    "lint:tsc": "tsc --noEmit",
-    "prepare": "node .husky/install.mjs"
+    "lint:tsc": "tsc --noEmit && pnpm --recursive --no-bail run lint:tsc",
+    "prepare": "node .husky/install.mjs",
+    "test": "pnpm --recursive --no-bail run test"
   },
   "lint-staged": {
     "**": [
@@ -26,6 +30,9 @@
   },
   "prettier": "@kachkaev/prettier-config",
   "devDependencies": {
+    "@changesets/changelog-github": "1.0.0",
+    "@changesets/cli": "3.0.0",
+    "@changesets/config": "4.0.0",
     "@cspell/dict-ru_ru": "2.3.2",
     "@kachkaev/eslint-config-base": "1.2.0",
     "@kachkaev/markdownlint-config": "1.0.1",

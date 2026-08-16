@@ -7,4 +7,11 @@ export default defineConfig([
   {
     ignores: [".claude/**", ".husky/**", "**/dist/**"],
   },
+
+  {
+    files: ["**/vitest.config.ts"],
+    rules: {
+      "import/no-default-export": "off", // Vitest reads the config from the file's default export
+    },
+  },
 ]);
