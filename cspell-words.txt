@@ -1,0 +1,8 @@
+dedupe
+env
+kachkaev
+knip
+occasionner
+tsc
+worktree
+worktrees
