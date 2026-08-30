@@ -39,7 +39,7 @@
     "@kachkaev/prettier-config": "2.2.1",
     "@tsconfig/node-ts": "23.6.4",
     "@tsconfig/strictest": "2.0.8",
-    "@types/node": "26.2.0",
+    "@types/node": "26.4.0",
     "cspell": "10.0.1",
     "eslint": "9.39.5",
     "husky": "9.1.7",
