@@ -32,7 +32,7 @@ describe("computeMilestones", () => {
       from: "2023-02-01T00:00:00Z",
       to: "2023-03-01T00:00:00Z",
       timeZone: "UTC",
-      minValues: { seconds: Number.POSITIVE_INFINITY },
+      minValues: { seconds: Infinity },
     });
 
     expect(
@@ -81,7 +81,7 @@ describe("computeMilestones", () => {
       from: "2020-07-01T00:00:00Z",
       to: "2020-07-02T00:00:00Z",
       timeZone: "UTC",
-      minValues: { seconds: Number.POSITIVE_INFINITY },
+      minValues: { seconds: Infinity },
     });
 
     expect(
