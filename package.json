@@ -40,7 +40,7 @@
     "@tsconfig/node-ts": "23.6.4",
     "@tsconfig/strictest": "2.0.8",
     "@types/node": "26.4.1",
-    "cspell": "10.1.1",
+    "cspell": "10.2.0",
     "eslint": "9.39.5",
     "husky": "9.1.7",
     "knip": "6.33.0",
