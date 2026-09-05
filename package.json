@@ -31,7 +31,7 @@
   "prettier": "@kachkaev/prettier-config",
   "devDependencies": {
     "@changesets/changelog-github": "1.0.1",
-    "@changesets/cli": "3.0.1",
+    "@changesets/cli": "3.0.2",
     "@changesets/config": "4.0.0",
     "@cspell/dict-ru_ru": "2.3.2",
     "@kachkaev/eslint-config-base": "2.0.0",
