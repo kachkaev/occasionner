@@ -45,7 +45,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "temporal-polyfill": "1.0.4"
+    "temporal-polyfill": "1.0.5"
   },
   "devDependencies": {
     "@tsconfig/node-ts": "23.6.4",
