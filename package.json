@@ -35,7 +35,7 @@
     "@kachkaev/eslint-config-base": "2.0.0",
     "@kachkaev/markdownlint-config": "1.0.1",
     "@kachkaev/prettier-config": "2.2.1",
-    "@tsconfig/node-ts": "23.6.4",
+    "@tsconfig/node-ts": "23.6.5",
     "@tsconfig/strictest": "2.0.8",
     "@types/node": "26.6.5",
     "cspell": "10.4.1",
